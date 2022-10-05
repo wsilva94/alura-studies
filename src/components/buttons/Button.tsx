@@ -2,7 +2,17 @@ import React from "react";
 
 class Button extends React.Component {
     render(): React.ReactNode {
-        return <button>Click</button>;
+        const backgroundColor = "blue";
+
+        return (
+            <button
+                style={{
+                    backgroundColor,
+                }}
+            >
+                Click
+            </button>
+        );
     }
 }
 
