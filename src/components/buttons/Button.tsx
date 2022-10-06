@@ -1,18 +1,9 @@
 import React from "react";
+import StyleButton from "./Button.module.scss";
 
 class Button extends React.Component {
     render(): React.ReactNode {
-        const backgroundColor = "blue";
-
-        return (
-            <button
-                style={{
-                    backgroundColor,
-                }}
-            >
-                Click
-            </button>
-        );
+        return <button className={StyleButton.button}>Click</button>;
     }
 }
 
